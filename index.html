@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>안녕👋🏻</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="img-wrap"></div>
+
+      <div id="login-form-wrap" class="hidden">
+        <form id="login-form">
+          <input
+            required
+            minlength="2"
+            maxlength="10"
+            type="text"
+            placeholder="What is your name?"
+            class="font-bold"
+          />
+          <input type="submit" value="Log In" class="font-bold" />
+        </form>
+      </div>
+
+      <div id="after-login" class="hidden">
+        <div class="left">
+          <h2 id="clock">00 : 00</h2>
+          <h1 id="greeting" class="hidden font-bold"></h1>
+
+          <div id="quotoe">
+            <p></p>
+            <span></span>
+          </div>
+
+          <div id="weather">
+            <span></span>
+            <span></span>
+            <div class="weather-icon-wrap"></div>
+          </div>
+        </div>
+
+        <div class="right">
+          <form id="todo-form">
+            <input type="text" placeholder="What do I have to do?" required />
+          </form>
+          <ul id="todo-wrap"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotoes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>

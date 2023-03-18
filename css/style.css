@@ -1,0 +1,136 @@
+.font-light {
+  font-family: "PyeongChangPeace-Ligth";
+  font-weight: 300;
+}
+.font-bold {
+  font-family: "PyeongChangPeace-Bold";
+  font-weight: 700;
+}
+.hidden {
+  display: none !important;
+}
+#wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 1200px;
+}
+/* 배경화면 */
+#img-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+/*로그인 인풋*/
+#login-form-wrap {
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#login-form-wrap input {
+  padding: 14px 10px;
+  font-size: 30px;
+}
+#login-form-wrap input:first-child {
+  margin-right: 10px;
+  border-bottom: 3px solid #fff;
+}
+#login-form-wrap > input:last-child:hover {
+  color: #ff5500;
+  transition: all 0.3s;
+}
+/* 로그인 후 화면 */
+#after-login {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70vw;
+}
+#after-login .left,
+#after-login .right {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 80vh;
+  min-width: 452px;
+}
+#after-login .left {
+  align-items: center;
+  border-right: 3px dashed #fff;
+}
+#after-login .left h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+#after-login .left h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#quotoe {
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+#weather {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/weatherBG.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#weather span {
+  font-size: 26px;
+}
+.weather-icon-wrap {
+  width: 40%;
+}
+/*todo list*/
+#todo-form {
+  margin-bottom: 20px;
+}
+#todo-form input {
+  width: 100%;
+  padding: 14px 10px;
+  font-size: 30px;
+  border-bottom: 3px solid #fff;
+}
+#todo-wrap {
+  overflow-y: auto;
+  width: 100%;
+}
+#todo-wrap::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+#todo-wrap::-webkit-scrollbar-thumb {
+  background: rgba(255, 157, 0, 0.571);
+}
+
+#todo-wrap li {
+  font-size: 20px;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#todo-wrap button {
+  font-size: 20px;
+}
+#todo-wrap button:hover {
+  color: #ff5500;
+}
